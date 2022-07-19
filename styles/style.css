@@ -4,8 +4,9 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  border: solid red;
 }
-/* variables */
+/* chartset Booki variables */
 :root {
   --booki-blue: #0065fc;
   --booki-blue-light: #deebff;
@@ -18,11 +19,15 @@ html,
 body {
   font-family: "Raleway", sans-serif;
 }
+section {
+  margin-bottom: 10px;
+}
 
 h1,
 h2,
 h3 {
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 a {
@@ -42,8 +47,9 @@ header {
   justify-content: space-between;
 }
 
-header .logo img{
-  height: 70px;
+header .logo img {
+  height: 60px;
+  width: auto;
   width: auto;
 }
 
@@ -65,4 +71,101 @@ header nav ul a:active,
 .active {
   border-top: solid var(--booki-blue);
   color: var(--booki-blue);
+}
+
+/* Search bar settings */
+
+.fa-location-dot,
+.fa-money-bill-wave,
+.fa-child-reaching,
+.fa-heart,
+.fa-dog {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  background-color: var(--booki-grey);
+  width: 51px;
+  height: 50px;
+  border-radius: 15px 0 0 15px;
+}
+
+.fa-solid::before {
+  line-height: 3;
+}
+
+.search-bar input {
+  width: 235px;
+  height: 50px;
+  /* border: 1px solid var(--booki-grey); */
+  padding-left: 18.56px;
+  border: 0px;
+}
+
+.search-bar input::placeholder {
+  color: black;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+
+.search-bar button {
+  height: 50px;
+  width: 132px;
+  background-color: var(--booki-blue);
+  border: 0px;
+  border-radius: 0 15px 15px 0;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+/* Filters container settings */
+
+.filters-container {
+  display: flex;
+  align-items: center;
+}
+
+.filters-container h3 {
+  margin-right: 32.59px;
+}
+
+.filter-items {
+  display: flex;
+  border: 1px solid var(--booki-grey);
+  border-radius: 50px;
+  align-items: center;
+  margin-right: 25px;
+}
+.filter-items i {
+  border-radius: 50%;
+  margin-right: 13.33px;
+  background-color: var(--booki-blue-light);
+}
+.filter-items i::before {
+  color: var(--booki-blue);
+}
+.filter-items p {
+  margin-right: 20px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.info i {
+  display: inline-block;
+  text-align: center;
+  margin: 0 20px 0 0;
+  border: 1px solid var(--booki-grey);
+  width: 18px;
+  border-radius: 100%;
+}
+
+.fa-info::before {
+  color: var(--booki-blue);
+  font-size: x-small;
+  font-weight: 900;
+  line-height: 1;
+  vertical-align: middle;
 }
