@@ -1,0 +1,440 @@
+/* ---------------------
+------------------------
+Project 2 OpenClassRooms 
+by Charles-Antoine FENET 
+------------------------
+-----------------------*/
+
+/* -----------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+------------Chartset Booki variables -------------
+--------------------------------------------------
+--------------------------------------------------
+------------------------------------------------*/
+
+/* chartset Booki variables */
+:root {
+  --booki-blue: #0065fc;
+  --booki-blue-light: #deebff;
+  --booki-grey: #f2f2f2;
+}
+
+/* -----------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+------------General settings----------------------
+--------------------------------------------------
+--------------------------------------------------
+------------------------------------------------*/
+.wrapper {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto 0 auto;
+}
+
+i {
+  color: var(--booki-blue);
+}
+.fa-location-dot {
+  color: black;
+}
+
+.fa-star {
+  color: var(--booki-grey);
+}
+
+.container {
+  padding: 12px 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+h4 {
+  font-weight: bold;
+  font-size: small;
+  padding-bottom: 12px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  height: inherit;
+}
+
+/* -----------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+------------header settings-----------------------
+--------------------------------------------------
+--------------------------------------------------
+------------------------------------------------*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+header nav,
+header nav ul,
+header nav ul a {
+  height: 120px;
+}
+
+.logo {
+  padding-left: 15px;
+}
+
+header .logo a img {
+  display: inline-block;
+  height: 40px;
+  width: auto;
+}
+
+header nav ul,
+header nav ul li {
+  display: flex;
+  height: inherit;
+}
+
+header nav ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100%;
+}
+
+header nav ul a:hover {
+  border-top: solid var(--booki-blue);
+}
+
+header nav ul a:active,
+.active {
+  border-top: solid var(--booki-blue);
+  color: var(--booki-blue);
+}
+
+/* -----------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+--------🔍🔍🔍 Search bar settings 🔍🔍🔍-----------
+--------------------------------------------------
+--------------------------------------------------
+------------------------------------------------*/
+
+.search-bar {
+  display: flex;
+  height: 50px;
+}
+
+.search-bar label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--booki-grey);
+  width: 51px;
+  border-radius: 15px 0 0 15px;
+}
+
+.search-bar input {
+  width: 235px;
+  padding-left: 18.56px;
+  border: 1px solid var(--booki-grey);
+  border-radius: 15px;
+}
+
+.search-bar input::placeholder {
+  color: black;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+
+.search-bar button {
+  width: 132px;
+  background: var(--booki-blue);
+  border: none;
+  border-radius: 0 15px 15px 0;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+/* -----------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+------------Filters container settings------------
+--------------------------------------------------
+--------------------------------------------------
+------------------------------------------------*/
+
+.container-filters {
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* height: 50px; */
+}
+
+.container-filters h3 {
+  margin-right: 32.59px;
+  padding: 0;
+}
+
+.filters-area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-items {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--booki-grey);
+  border-radius: 50px;
+  margin-right: 25px;
+}
+
+.filter-items i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--booki-blue-light);
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  margin-right: 13.33px;
+}
+
+.filter-items p {
+  margin-right: 20px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 25px 0;
+}
+
+.info i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--booki-grey);
+  border-radius: 50%;
+  font-size: smaller;
+  height: 22px;
+  width: 23px;
+  margin-right: 13.33px;
+}
+
+/* -----------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+---------Accommodations Section settings----------
+--------------------------------------------------
+--------------------------------------------------
+------------------------------------------------*/
+.accommodations-results {
+  display: flex;
+}
+
+.accommodations-results article {
+  width: 70%;
+  background: var(--booki-grey);
+  border-radius: 15px;
+  padding: 47px 40px;
+
+}
+
+.accommodations-results aside {
+  width: 30%;
+  background: var(--booki-grey);
+  border-radius: 15px;
+  padding: 47px 40px;
+  margin-left: 40px;
+}
+
+/*************************
+--Accommodation Article--
+---------Settings--------
+************************ */
+
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.accommodations-card {
+  background-color: white;
+  border-radius: 15px;
+  width: 30%;
+}
+
+.accommodation-link {
+  display: block;
+  padding: 5px 5px 0 5px;
+}
+
+.accommodation-link figure img {
+  width: 100%;
+  height: 112px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.accommodation-link figcaption {
+  font-size: small;
+  font-weight: bold;
+  margin: 7px 0 0 10px;
+}
+
+.accommodation-link p,
+.accommodation-link .rating {
+  margin: 7px 10px;
+  font-size: small;
+}
+
+.acco1-rating :nth-child(-n + 4),
+.acco3-rating :nth-child(-n + 4),
+.acco5-rating :nth-child(-n + 4) {
+  color: var(--booki-blue);
+}
+.acco2-rating :nth-child(1n),
+.acco6-rating :nth-child(1n) {
+  color: var(--booki-blue);
+}
+
+.acco4-rating :nth-child(-n + 3) {
+  color: var(--booki-blue);
+}
+
+.footer-link a {
+  font-weight: bold;
+  font-size: small;
+}
+
+/*************************
+---Accommodation Aside----
+---------Settings---------
+**************************/
+
+.title-popular {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-popular i {
+  color: black;
+}
+
+.popular-results {
+  display: flex;
+  flex-direction: column;
+  row-gap: 33px;
+}
+
+.popular-card {
+  display: flex;
+  flex-direction: column;
+  justify-items: end;
+}
+
+.popular-link {
+  display: flex;
+  justify-content: flex-start;
+  background-color: white;
+  border-radius: 15px;
+  width: 343px;
+  height: 144px;
+}
+
+.popular-link figure {
+  width: 40%;
+  object-fit: cover;
+  border-radius: 15px 0 0 15px;
+  padding: 4px 0 4px 4px;
+}
+
+.popular-link figure img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 0 0 15px;
+}
+
+.popular-link .description {
+  display: flex;
+  flex-direction: column;
+  width: 135px;
+  overflow: auto;
+}
+
+.popular-link .container {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.popular-link p,
+.popular-link .rating {
+  font-size: small;
+}
+
+.popu1-rating :nth-child(1n) {
+  color: var(--booki-blue);
+}
+.popu2-rating :nth-child(-n + 4),
+.popu3-rating :nth-child(-n + 4) {
+  color: var(--booki-blue);
+}
+
+
+/* -----------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+---------Section activities settings----------
+--------------------------------------------------
+--------------------------------------------------
+------------------------------------------------*/
+
+
+
+
+/* -----------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+-----------------Footer settings------------------
+--------------------------------------------------
+--------------------------------------------------
+------------------------------------------------*/
+
+footer {
+  background: var(--booki-grey);
+  padding: 47px 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-content {
+  display: flex;
+}
+.footer-content h3 {
+  padding-bottom: 5px;
+  font-size: small;
+}
+.footer-content ul {
+  font-size: small;
+}
+
+.footer-items {
+  flex-grow: 1;
+  line-height: 2;
+}
