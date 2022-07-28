@@ -5,7 +5,6 @@ by Charles-Antoine FENET
 ------------------------
 -------------------- -->
 
-
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -32,7 +31,7 @@ by Charles-Antoine FENET
     <title>Booki by Charles-Antoine Fenet</title>
   </head>
   <body>
-<!----------------------
+    <!----------------------
 ------------------------
 ---------HEADER--------- 
 ------------------------
@@ -45,12 +44,12 @@ by Charles-Antoine FENET
       </div>
       <nav class="reset-wrapper">
         <ul>
-          <li><a class="active" href="#">Hébergements</a></li>
-          <li><a href="#">Activités</a></li>
+          <li><a href="#accommodations">Hébergements</a></li>
+          <li><a href="#activities">Activités</a></li>
         </ul>
       </nav>
     </header>
-<!-- -------------------
+    <!-- -------------------
 ------------------------
 -----------MAIN--------- 
 ------------------------    
@@ -76,7 +75,12 @@ by Charles-Antoine FENET
             id="search-city"
             placeholder="Marseille, France"
           />
-          <button type="submit">Rechercher</button>
+          <button type="submit">
+            <span class="texte-search">Recherche</span>
+            <span class="loupe-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+          </button>
         </form>
         <div class="container container-filters">
           <h3>Filtres</h3>
@@ -109,7 +113,7 @@ by Charles-Antoine FENET
       -----ACCOMMODATIONS----- 
       ------------------------    
       ----------------------->
-      <section class="container accommodations-results">
+      <section id="accommodations" class="container accommodations-results">
         <!----------------------
         ------------------------
         -----ACCOMMODATIONS----- 
@@ -324,25 +328,44 @@ by Charles-Antoine FENET
       -------ACTIVITIES------- 
       ------------------------    
       ------------------------>
-      <section class="activities-results">
+      <section id="activities" class="container activities-results">
         <h2>Activités à Marseille</h2>
         <div class="activities-container">
-          <div class="activity-card card-1">
-            <a href="#" class="activity-link">
-              <figure>
-                <img
-                  src="#"
-                  alt="Photo du vieux port de Marseille"
-                />
-                <figcaption>Vieux Port</figcaption>
-              </figure>
+            <a href="#" class="activity-card activity-link-1">
+              <div>
+                <h4>Vieux port</h4>
+              </div>
             </a>
-          </div>
+            <a href="#" class="activity-card activity-link-2">
+              <div>
+                <h4>Fort de Pomègues</h4>
+              </div>
+            </a>
+            <a href="#" class="activity-card activity-link-3">
+              <div>
+                <h4>Îles du Frioul</h4>
+              </div>
+            </a>
+            <a href="#" class="activity-card activity-link-4">
+              <div>
+                <h4>Parc National des Calanques</h4>
+              </div>
+            </a>
+            <a href="#" class="activity-card activity-link-5">
+              <div>
+                <h4>Notre-Dame-de-la-Garde</h4>
+              </div>
+            </a>
+            <a href="#" class="activity-card activity-link-6">
+              <div>
+                <h4>Parc Longchamp</h4>
+              </div>
+            </a>
         </div>
       </section>
     </main>
 
-<!----------------------
+    <!----------------------
 ------------------------
 ----------FOOTER-------- 
 ------------------------    

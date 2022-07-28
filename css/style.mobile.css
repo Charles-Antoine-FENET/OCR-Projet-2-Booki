@@ -62,6 +62,8 @@ header nav ul a:hover {
   border-bottom: solid var(--booki-blue);
 }
 
+
+
 /* -----------------------------------------------
 --------------------------------------------------
 --------------------------------------------------
@@ -77,6 +79,14 @@ header nav ul a:hover {
 .search-bar button {
   width: 50px;
   border-radius: 15px;
+}
+
+.loupe-search{
+  display: inline;
+}
+
+.texte-search{
+  display: none;
 }
 
 /* -----------------------------------------------
