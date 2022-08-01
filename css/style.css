@@ -324,7 +324,6 @@ header nav ul li a:active {
 
 .footer-link a {
   font-weight: bold;
-  font-size: small;
 }
 
 /*************************
@@ -411,6 +410,10 @@ header nav ul li a:active {
 --------------------------------------------------
 ------------------------------------------------*/
 
+.activities-results {
+  margin: 52px 0;
+}
+
 .activities-container {
   display: flex;
   flex-direction: column;
@@ -479,6 +482,73 @@ header nav ul li a:active {
   background-image: url(/images/activites/parc-longchamp.jpg);
   background-size: cover;
   border-radius: 15px;
+}
+
+/* -----------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+---------BBBBBBBBBBIIIIIIIIIIIIIISSSSSSS----------
+--------------------------------------------------
+--------------------------------------------------
+------------------------------------------------*/
+
+.activities-resultsBIS {
+  margin: 52px 0;
+}
+
+.activities-containerBIS {
+  max-height: 455px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 35px;
+}
+
+.activity-cardBIS {
+  position: relative;
+  border-radius: 15px;
+  width: 22.58%;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.activity-cardBIS img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.title-activity{
+  position: absolute;
+  bottom: 0px;
+  background-color:white;
+  border-radius: 0 0 13px 13px;
+  width:calc(100% - 40px);
+  padding: 20px;
+  font-weight: bold;
+}
+
+.pics-1,
+.pics-4 {
+  height: 445px;
+
+}
+
+.pics-2 {
+  height: 240px;
+}
+
+.pics-3 {
+  height: 165px;
+}
+
+
+.pics-5 {
+  height: 195px;
+}
+
+.pics-6 {
+  height: 209px;
 }
 
 /* -----------------------------------------------
