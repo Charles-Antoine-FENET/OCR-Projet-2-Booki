@@ -15,7 +15,7 @@ by Charles-Antoine FENET
 
 /* Wrapper Mobile */
 .wrapper {
-  max-width: 335px;
+  max-width: 375px;
 }
 
 h1 {
@@ -41,25 +41,21 @@ header .logo {
 
 header nav ul {
   display: flex;
+  /* Verifier il nous avons besoin dedisplay flex sur l'Ul dans le responsive car il est déja ligne 102 dans le desktop */
   justify-content: space-evenly;
 }
 
-header nav,
-header nav ul,
 header nav ul a {
-  height: 50px;
+  padding: 13.5px 50px;
+  border-top: none;
+  border-bottom: 3px solid white;
 }
 
-header nav ul a:active,
-.active {
+header nav ul li a:hover,
+header nav ul li a:active {
+  border-bottom: 3px solid var(--booki-blue);
   border-top: none;
-  border-bottom: solid var(--booki-blue);
   color: var(--booki-blue);
-}
-
-header nav ul a:hover {
-  border-top: none;
-  border-bottom: solid var(--booki-blue);
 }
 
 /* -----------------------------------------------
@@ -74,17 +70,20 @@ header nav ul a:hover {
   padding: 18px 0 40px 0;
 }
 
+.search-bar input {
+  width: 250px;
+}
+
 .search-bar button {
   width: 50px;
   border-radius: 15px;
 }
 
-.loupe-search {
-  display: inline;
-}
-
 .texte-search {
   display: none;
+}
+.search-bar button i {
+  display: block;
 }
 
 /* -----------------------------------------------
@@ -129,11 +128,15 @@ header nav ul a:hover {
   padding: 0px;
 }
 
+
+/* Travailler le centrage de mon aside et le padding comme sur la maquette */
+
+
 .accommodations-results aside {
   width: 100%;
   background: var(--booki-grey);
-  border-radius: 15px;
-  padding: 0px;
+  border-radius: 0px;
+  padding: 20px 0;
   margin-left: 0px;
 }
 
@@ -183,34 +186,6 @@ header nav ul a:hover {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
-.activity-link-1,
-.activity-link-2,
-.activity-link-3,
-.activity-link-4,
-.activity-link-5,
-.activity-link-6 {
-  height: 190px;
-}
-
-/* -----------------------------------------------
---------------------------------------------------
---------------------------------------------------
----------Section activities BISSSSSSSSSS----------
---------------------------------------------------
---------------------------------------------------
-------------------------------------------------*/
-
-.activities-containerBIS {
-  flex-wrap: wrap;
-  max-height: none;
-}
-
-.activity-cardBIS {
-  border-radius: 15px;
-  width: 100%;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-}
-
 .pics-1,
 .pics-2,
 .pics-3,
@@ -231,4 +206,8 @@ header nav ul a:hover {
 .footer-content {
   flex-direction: column;
   row-gap: 25px;
+}
+
+.footer-items {
+  width: 100%;
 }

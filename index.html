@@ -20,7 +20,7 @@ by Charles-Antoine FENET
     <link rel="stylesheet" href="./css/nomalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link
-      media="only screen and (max-width: 767px)"
+      media="only screen and (max-width: 375px)"
       rel="stylesheet"
       href="./css/style.mobile.css"
     />
@@ -66,9 +66,10 @@ by Charles-Antoine FENET
           <p>En plein centre ville ou en pleine nature</p>
         </div>
         <form class="container search-bar" action="#">
-          <label for="search-city"
-            ><i class="fa-solid fa-location-dot"></i
-          ></label>
+          <label for="search-city">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="hiddenLabel">Recherchez votre destination</p>
+          </label>
           <input
             type="text"
             name="search-city"
@@ -77,9 +78,7 @@ by Charles-Antoine FENET
           />
           <button type="submit">
             <span class="texte-search">Recherche</span>
-            <span class="loupe-search">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
+            <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
         <div class="container container-filters">
@@ -328,107 +327,76 @@ by Charles-Antoine FENET
       -------ACTIVITIES------- 
       ------------------------    
       ------------------------>
+
       <section id="activities" class="container activities-results">
         <h2>Activités à Marseille</h2>
-        <div class="activities-container">
-          <a href="#" class="activity-card activity-link-1">
-            <div>
+        <div class="activities-cards-container">
+          <div class="one-pics-container">
+            <a href="#" class="activity-card">
+              <img
+                class="pics-1"
+                src="./images/activites/vieux-port.jpg"
+                alt="Photo du vieux port de Marseille"
+              />
               <h4>Vieux port</h4>
-            </div>
-          </a>
-          <a href="#" class="activity-card activity-link-2">
-            <div>
-              <h4>Fort de Pomègues</h4>
-            </div>
-          </a>
-          <a href="#" class="activity-card activity-link-3">
-            <div>
-              <h4>Îles du Frioul</h4>
-            </div>
-          </a>
-          <a href="#" class="activity-card activity-link-4">
-            <div>
-              <h4>Parc National des Calanques</h4>
-            </div>
-          </a>
-          <a href="#" class="activity-card activity-link-5">
-            <div>
-              <h4>Notre-Dame-de-la-Garde</h4>
-            </div>
-          </a>
-          <a href="#" class="activity-card activity-link-6">
-            <div>
-              <h4>Parc Longchamp</h4>
-            </div>
-          </a>
-        </div>
-      </section>
-      <!----------------------
-      ------------------------
-      -------ACTIVITIES BIS------- 
-      ------------------------    
-      ------------------------>
-      <section id="activitiesBIS" class="container activities-resultsBIS">
-        <h2>Activités à Marseille</h2>
-        <div class="activities-containerBIS">
-          <a href="#" class="activity-cardBIS activity-link-1BIS">
-            <img
-              class="pics-1"
-              src="./images/activites/vieux-port.jpg"
-              alt="Photo du vieux port de Marseille"
-            />
-            <div class="title-activity"><p>Vieux port</p></div>
-          </a>
-          <a href="#" class="activity-cardBIS activity-link-2BIS">
-            <img
-              class="pics-2"
-              src="./images/activites/fort-de-pomègues.jpg"
-              alt="Photo du vieux fort de pomègues"
-            />
-            <div class="title-activity">
-              <p>Fort de Pomègues</p>
-            </div>
-          </a>
-          <a href="#" class="activity-cardBIS activity-link-3BIS">
-            <img
-              class="pics-3"
-              src="./images/activites/iles-du-frioul.jpg"
-              alt="Photo des îmes du Frioul"
-            />
-            <div class="title-activity">
-              <p>Îles du Frioul</p>
-            </div>
-          </a>
-          <a href="#" class="activity-cardBIS activity-link-4BIS">
-            <img
-              class="pics-4"
-              src="./images/activites/parc-national-des-calanques.jpg"
-              alt="Photo des Calanques de Marseille"
-            />
-            <div class="title-activity">
-              <p>Parc National des Calanques</p>
-            </div>
-          </a>
-          <a href="#" class="activity-cardBIS activity-link-5BIS">
-            <img
-              class="pics-5"
-              src="./images/activites/notre-dame-de-la-garde.jpg"
-              alt="Photo de Notre Dame de la Garde"
-            />
-            <div class="title-activity">
-              <p>Notre-Dame-de-la-Garde</p>
-            </div>
-          </a>
-          <a href="#" class="activity-cardBIS activity-link-6BIS">
-            <img
-              class="pics-6"
-              src="./images/activites/parc-longchamp.jpg"
-              alt="Photo du parc Longchamp"
-            />
-            <div class="title-activity">
-              <p>Parc Longchamp</p>
-            </div>
-          </a>
+            </a>
+          </div>
+          <div class="two-pics-container">
+            <a href="#" class="activity-card">
+              <img
+                class="pics-2"
+                src="./images/activites/fort-de-pomègues.jpg"
+                alt="Photo du vieux fort de pomègues"
+              />
+              <h4>
+                <p>Fort de Pomègues</p>
+              </h4>
+            </a>
+            <a href="#" class="activity-card">
+              <img
+                class="pics-3"
+                src="./images/activites/iles-du-frioul.jpg"
+                alt="Photo des îmes du Frioul"
+              />
+              <h4>
+                <p>Îles du Frioul</p>
+              </h4>
+            </a>
+          </div>
+          <div class="one-pics-container">
+            <a href="#" class="activity-card">
+              <img
+                class="pics-4"
+                src="./images/activites/parc-national-des-calanques.jpg"
+                alt="Photo des Calanques de Marseille"
+              />
+              <h4>
+                <p>Parc National des Calanques</p>
+              </h4>
+            </a>
+          </div>
+          <div class="two-pics-container">
+            <a href="#" class="activity-card">
+              <img
+                class="pics-5"
+                src="./images/activites/notre-dame-de-la-garde.jpg"
+                alt="Photo de Notre Dame de la Garde"
+              />
+              <h4>
+                <p>Notre-Dame-de-la-Garde</p>
+              </h4>
+            </a>
+            <a href="#" class="activity-card">
+              <img
+                class="pics-6"
+                src="./images/activites/parc-longchamp.jpg"
+                alt="Photo du parc Longchamp"
+              />
+              <h4>
+                <p>Parc Longchamp</p>
+              </h4>
+            </a>
+          </div>
         </div>
       </section>
     </main>

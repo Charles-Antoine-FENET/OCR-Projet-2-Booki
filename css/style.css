@@ -37,6 +37,11 @@ by Charles-Antoine FENET
   padding: 12px 0;
 }
 
+section{
+  margin: 40px 0;
+  padding: 0;
+}
+
 i {
   color: var(--booki-blue);
 }
@@ -99,6 +104,7 @@ header .logo a img {
   width: auto;
 }
 
+/* Voir si cette partie est necessaire. Si elle ne l'est pas, il faudra verifier ligne 43 dans le responsive */
 header nav ul,
 header nav ul li {
   display: flex;
@@ -110,11 +116,6 @@ header nav ul a {
   padding: 40px 40px;
   border-top: 3px solid white;
   color: black;
-}
-
-header nav ul li a:focus {
-  border-top: 3px solid var(--booki-blue);
-  color: var(--booki-blue);
 }
 
 header nav ul li a:hover,
@@ -145,11 +146,16 @@ header nav ul li a:active {
   border-radius: 15px 0 0 15px;
 }
 
+/* Hidden label for the accessibility */
+
+.hiddenLabel {
+  font: 0/0 a;
+}
+
 .search-bar input {
   width: 235px;
   padding-left: 18.56px;
   border: 1px solid var(--booki-grey);
-  /* border-radius: 15px; */
 }
 
 .search-bar input::placeholder {
@@ -168,7 +174,8 @@ header nav ul li a:active {
   font-weight: 500;
 }
 
-.loupe-search {
+.search-bar button i {
+  color: white;
   display: none;
 }
 
@@ -322,6 +329,10 @@ header nav ul li a:active {
   color: var(--booki-blue);
 }
 
+.footer-link {
+  margin-top: 43px;
+}
+
 .footer-link a {
   font-weight: bold;
 }
@@ -330,8 +341,6 @@ header nav ul li a:active {
 ---Accommodation Aside----
 ---------Settings---------
 **************************/
-
-/* Partie a revoir complétement. Il faut parametrer comme dans mon accommodation */
 
 .title-popular {
   display: flex;
@@ -410,128 +419,45 @@ header nav ul li a:active {
 --------------------------------------------------
 ------------------------------------------------*/
 
-.activities-results {
-  margin: 52px 0;
+.activities-cards-container {
+  display: flex;
+  column-gap: 43px;
 }
 
-.activities-container {
+
+.two-pics-container,
+.one-pics-container{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  max-height: 449px;
-  row-gap: 40px;
-  column-gap: 35px;
+  width: 22.58%;
+  justify-content: space-between;
 }
 
 .activity-card {
-  border-radius: 15px;
-  width: 22.58%;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-}
-
-.activity-card div {
   display: flex;
-  align-items: flex-end;
-  height: 100%;
-}
-
-.activity-card div h4 {
-  width: 100%;
-  background-color: white;
-  border-radius: 0 0 13px 13px;
-  padding: 20px;
-}
-
-.activity-link-1 {
-  height: 445px;
-  background-image: url(/images/activites/vieux-port.jpg);
-  background-size: cover;
-  border-radius: 15px;
-}
-
-.activity-link-2 {
-  height: 236px;
-  background-image: url(/images/activites/fort-de-pomègues.jpg);
-  background-size: cover;
-  border-radius: 15px;
-}
-
-.activity-link-3 {
-  height: 165px;
-  background-image: url(/images/activites/iles-du-frioul.jpg);
-  background-size: cover;
-  border-radius: 15px;
-}
-
-.activity-link-4 {
-  height: 445px;
-  background-image: url(/images/activites/parc-national-des-calanques.jpg);
-  background-size: cover;
-  border-radius: 15px;
-}
-
-.activity-link-5 {
-  height: 195px;
-  background-image: url(/images/activites/notre-dame-de-la-garde.jpg);
-  background-size: cover;
-  border-radius: 15px;
-}
-
-.activity-link-6 {
-  height: 209px;
-  background-image: url(/images/activites/parc-longchamp.jpg);
-  background-size: cover;
-  border-radius: 15px;
-}
-
-/* -----------------------------------------------
---------------------------------------------------
---------------------------------------------------
----------BBBBBBBBBBIIIIIIIIIIIIIISSSSSSS----------
---------------------------------------------------
---------------------------------------------------
-------------------------------------------------*/
-
-.activities-resultsBIS {
-  margin: 52px 0;
-}
-
-.activities-containerBIS {
-  max-height: 455px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  row-gap: 40px;
-  column-gap: 35px;
-}
-
-.activity-cardBIS {
   position: relative;
   border-radius: 15px;
-  width: 22.58%;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
-.activity-cardBIS img {
-  object-fit: cover;
+.activity-card img {
   width: 100%;
+  object-fit: cover;
   border-radius: 15px;
 }
 
-.title-activity{
+.activity-card h4{
   position: absolute;
   bottom: 0px;
-  background-color:white;
-  border-radius: 0 0 13px 13px;
-  width:calc(100% - 40px);
-  padding: 20px;
-  font-weight: bold;
+  width: calc(100% - 44px);
+  padding: 22px;
+  border-radius: 0 0 14px 14px;
+  background-color: white;
 }
 
 .pics-1,
 .pics-4 {
   height: 445px;
-
 }
 
 .pics-2 {
@@ -541,7 +467,6 @@ header nav ul li a:active {
 .pics-3 {
   height: 165px;
 }
-
 
 .pics-5 {
   height: 195px;
