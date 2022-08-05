@@ -14,14 +14,15 @@ style.mobile.css
 --------------------------------------------------
 ------------------------------------------------*/
 
-/* Wrapper Mobile */
-.wrapper {
-  max-width: 375px;
-}
+/* Wrapper Mobile de 375 - les 30px de margin */
+/* .wrapper {
+  max-width: 345px;
+  margin: 0 15px 0 15px;
+} */
 
-h1 {
+/* h1 {
   font-size: 22px;
-}
+} */
 
 /* -----------------------------------------------
 --------------------------------------------------
@@ -31,33 +32,8 @@ h1 {
 --------------------------------------------------
 ------------------------------------------------*/
 
-header {
-  display: block;
-  text-align: center;
-}
+/* RAS */
 
-header .logo {
-  padding: 20px 0;
-}
-
-header nav ul {
-  display: flex;
-  /* Verifier il nous avons besoin dedisplay flex sur l'Ul dans le responsive car il est déja ligne 102 dans le desktop */
-  justify-content: space-evenly;
-}
-
-header nav ul a {
-  padding: 13.5px 50px;
-  border-top: none;
-  border-bottom: 3px solid white;
-}
-
-header nav ul li a:hover,
-header nav ul li a:active {
-  border-bottom: 3px solid var(--booki-blue);
-  border-top: none;
-  color: var(--booki-blue);
-}
 
 /* -----------------------------------------------
 --------------------------------------------------
@@ -67,13 +43,7 @@ header nav ul li a:active {
 --------------------------------------------------
 ------------------------------------------------*/
 
-.section-search {
-  padding: 18px 0 40px 0;
-}
 
-.search-bar input {
-  width: 250px;
-}
 
 .search-bar button {
   width: 50px;
@@ -83,6 +53,7 @@ header nav ul li a:active {
 .texte-search {
   display: none;
 }
+
 .search-bar button i {
   display: block;
 }
@@ -95,20 +66,11 @@ header nav ul li a:active {
 --------------------------------------------------
 ------------------------------------------------*/
 
-/* .container-filters{
-  display: block;
-} */
-.container-filters {
-  display: block;
+.filters-area {
+  justify-content: flex-start;
+  row-gap: 12px;
 }
 
-.filter-items {
-  margin: 0 12px 15px 0;
-}
-
-.info {
-  margin: 0;
-}
 
 /* -----------------------------------------------
 --------------------------------------------------
@@ -118,28 +80,31 @@ header nav ul li a:active {
 --------------------------------------------------
 ------------------------------------------------*/
 
-.accommodations-results {
-  flex-direction: column-reverse;
+
+/*************************
+---Accommodation Aside----
+---------Settings---------
+**************************/
+
+
+.popular-results {
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 15px;
 }
 
-.accommodations-results article {
-  width: 100%;
-  background: white;
-  border-radius: 15px;
-  padding: 0px;
+.popular-link {
+  flex-direction: row;
 }
 
-
-/* Travailler le centrage de mon aside et le padding comme sur la maquette */
-
-
-.accommodations-results aside {
-  width: 100%;
-  background: var(--booki-grey);
-  border-radius: 0px;
-  padding: 20px 0;
-  margin-left: 0px;
+.popular-link figure img {
+  display: flex;
+  height: 132px;
+  width: 139px;
+  border-radius: 15px 0 0 15px;
+  padding: 4px 0 4px 4px; 
 }
+
 
 /*************************
 --Accommodation Article--
@@ -159,14 +124,8 @@ header nav ul li a:active {
   width: 100%;
 }
 
-/*************************
----Accommodation Aside----
----------Settings---------
-**************************/
 
-.popular-results {
-  padding: 20px;
-}
+
 
 /* -----------------------------------------------
 --------------------------------------------------
@@ -178,13 +137,13 @@ header nav ul li a:active {
 
 .activities-cards-container {
   flex-direction: column;
-  row-gap: 50px;
+  row-gap: 20px;
 }
 
 .two-pics-container,
 .one-pics-container{
   width: 100%;
-  row-gap: 50px;
+  row-gap: 20px;
 
 }
 

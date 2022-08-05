@@ -375,8 +375,8 @@ header nav ul li a:active {
 
 .popular-link figure img {
   display: flex;
-  height: 139px;
-  width: 132px;
+  height: 132px;
+  width: 139px;
   object-fit: cover;
   border-radius: 15px 0 0 15px;
   padding: 4px 0 4px 4px; 

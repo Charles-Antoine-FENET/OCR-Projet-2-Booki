@@ -14,9 +14,11 @@ style.tablette.css
 --------------------------------------------------
 ------------------------------------------------*/
 
-.wrapper {
-  max-width: 768px;
-}
+/* .wrapper {
+  max-width: 738px;
+  margin: 0 15px 0 15px;
+} */
+
 
 section {
   margin: 20px 0;
@@ -38,9 +40,9 @@ header .logo {
   padding: 20px 0;
 }
 
-header nav ul {
+/* header nav ul {
   justify-content: space-evenly;
-}
+} */
 
 header ul li {
   width: 100%;
@@ -114,6 +116,20 @@ header nav ul li a:active {
   border-radius: unset;
 }
 
+.accommodations-results article {
+  width: unset;
+  background: white;
+  border-radius: unset;
+  padding: 20px;
+}
+
+
+/*************************
+---Accommodation Aside----
+---------Settings---------
+**************************/
+
+
 .popular-results {
   flex-direction: row;
   justify-content: space-between;
@@ -123,8 +139,9 @@ header nav ul li a:active {
   flex-direction: column;
 }
 
+/* Voir si j'ai raison ou pas de set une width sur mes photos. Ne faudrait-il pas faire autrement? */
 .popular-link figure img {
-  width: 210px;
+  width: 200px;
   border-radius: 15px 15px 0 0;
   padding: 4px 4px 0 4px;
 }
@@ -133,16 +150,22 @@ header nav ul li a:active {
   padding-left: 12px;
 }
 
-.accommodations-results article {
-  width: unset;
-  background: white;
-  border-radius: unset;
-  padding: 20px;
-}
+/*************************
+--Accommodation Article--
+---------Settings--------
+************************ */
 
 .footer-link {
   margin-top: 25px;
 }
+
+/* -----------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+---------Section activities settings----------
+--------------------------------------------------
+--------------------------------------------------
+------------------------------------------------*/
 
 .activities-results {
   display: flex;
@@ -159,3 +182,13 @@ header nav ul li a:active {
   justify-content: space-evenly;
   row-gap: 43px;
 }
+
+/* -----------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+-----------------Footer settings------------------
+--------------------------------------------------
+--------------------------------------------------
+------------------------------------------------*/
+
+/* RAS */
