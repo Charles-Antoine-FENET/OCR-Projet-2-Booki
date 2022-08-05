@@ -2,7 +2,7 @@
 ------------------------
 Project 2 OpenClassRooms 
 by Charles-Antoine FENET 
-style.mobile.css
+style.tablette.css
 ------------------------
 -----------------------*/
 
@@ -14,15 +14,13 @@ style.mobile.css
 --------------------------------------------------
 ------------------------------------------------*/
 
-/* Wrapper Mobile */
 .wrapper {
-  max-width: 375px;
+  max-width: 768px;
 }
 
-h1 {
-  font-size: 22px;
+section {
+  margin: 20px 0;
 }
-
 /* -----------------------------------------------
 --------------------------------------------------
 --------------------------------------------------
@@ -41,12 +39,18 @@ header .logo {
 }
 
 header nav ul {
-  display: flex;
-  /* Verifier il nous avons besoin dedisplay flex sur l'Ul dans le responsive car il est déja ligne 102 dans le desktop */
   justify-content: space-evenly;
 }
 
+header ul li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 header nav ul a {
+  display: block;
+  width: 100%;
   padding: 13.5px 50px;
   border-top: none;
   border-bottom: 3px solid white;
@@ -56,7 +60,6 @@ header nav ul li a:hover,
 header nav ul li a:active {
   border-bottom: 3px solid var(--booki-blue);
   border-top: none;
-  color: var(--booki-blue);
 }
 
 /* -----------------------------------------------
@@ -68,23 +71,12 @@ header nav ul li a:active {
 ------------------------------------------------*/
 
 .section-search {
-  padding: 18px 0 40px 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.search-bar input {
-  width: 250px;
-}
-
-.search-bar button {
-  width: 50px;
-  border-radius: 15px;
-}
-
-.texte-search {
-  display: none;
-}
-.search-bar button i {
-  display: block;
+.search-bar {
+  justify-content: center;
 }
 
 /* -----------------------------------------------
@@ -95,19 +87,13 @@ header nav ul li a:active {
 --------------------------------------------------
 ------------------------------------------------*/
 
-/* .container-filters{
-  display: block;
-} */
 .container-filters {
   display: block;
 }
 
-.filter-items {
-  margin: 0 12px 15px 0;
-}
-
-.info {
-  margin: 0;
+.filters-area {
+  justify-content: space-evenly;
+  row-gap: 20px;
 }
 
 /* -----------------------------------------------
@@ -120,102 +106,56 @@ header nav ul li a:active {
 
 .accommodations-results {
   flex-direction: column-reverse;
+  column-gap: 0;
+}
+
+.accommodations-results aside {
+  width: unset;
+  border-radius: unset;
+}
+
+.popular-results {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.popular-link {
+  flex-direction: column;
+}
+
+.popular-link figure img {
+  width: 210px;
+  border-radius: 15px 15px 0 0;
+  padding: 4px 4px 0 4px;
+}
+
+.popular-link .container {
+  padding-left: 12px;
 }
 
 .accommodations-results article {
-  width: 100%;
+  width: unset;
   background: white;
-  border-radius: 15px;
-  padding: 0px;
-}
-
-
-/* Travailler le centrage de mon aside et le padding comme sur la maquette */
-
-
-.accommodations-results aside {
-  width: 100%;
-  background: var(--booki-grey);
-  border-radius: 0px;
-  padding: 20px 0;
-  margin-left: 0px;
-}
-
-/*************************
---Accommodation Article--
----------Settings--------
-************************ */
-
-.container-cards {
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.accommodations-card {
-  background-color: white;
-  border-radius: 15px;
-  width: 100%;
-}
-
-/*************************
----Accommodation Aside----
----------Settings---------
-**************************/
-
-.popular-results {
+  border-radius: unset;
   padding: 20px;
 }
 
-/* -----------------------------------------------
---------------------------------------------------
---------------------------------------------------
----------Section activities settings----------
---------------------------------------------------
---------------------------------------------------
-------------------------------------------------*/
+.footer-link {
+  margin-top: 25px;
+}
+
+.activities-results {
+  display: flex;
+  flex-direction: column;
+}
+.two-pics-container,
+.one-pics-container {
+  width: 45%;
+}
 
 .activities-cards-container {
-  flex-direction: column;
-  row-gap: 50px;
-}
-
-.two-pics-container,
-.one-pics-container{
-  width: 100%;
-  row-gap: 50px;
-
-}
-
-.activity-card {
-  border-radius: 15px;
-  width: 100%;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-}
-
-.pics-1,
-.pics-2,
-.pics-3,
-.pics-4,
-.pics-5,
-.pics-6 {
-  height: 190px;
-}
-
-/* -----------------------------------------------
---------------------------------------------------
---------------------------------------------------
------------------Footer settings------------------
---------------------------------------------------
---------------------------------------------------
-------------------------------------------------*/
-
-.footer-content {
-  flex-direction: column;
-  row-gap: 25px;
-}
-
-.footer-items {
-  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 43px;
 }

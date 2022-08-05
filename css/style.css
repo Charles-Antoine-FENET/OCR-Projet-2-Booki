@@ -2,6 +2,7 @@
 ------------------------
 Project 2 OpenClassRooms 
 by Charles-Antoine FENET 
+style.css
 ------------------------
 -----------------------*/
 
@@ -104,7 +105,6 @@ header .logo a img {
   width: auto;
 }
 
-/* Voir si cette partie est necessaire. Si elle ne l'est pas, il faudra verifier ligne 43 dans le responsive */
 header nav ul,
 header nav ul li {
   display: flex;
@@ -131,6 +131,9 @@ header nav ul li a:active {
 --------------------------------------------------
 --------------------------------------------------
 ------------------------------------------------*/
+.section-search{
+  margin-top: 0;
+}
 
 .search-bar {
   display: flex;
@@ -231,7 +234,7 @@ header nav ul li a:active {
 .info {
   display: flex;
   align-items: center;
-  margin: 10px 0 25px 0;
+  /* margin: 10px 0 25px 0; */
 }
 
 .info i {
@@ -255,6 +258,7 @@ header nav ul li a:active {
 ------------------------------------------------*/
 .accommodations-results {
   display: flex;
+  column-gap: 40px;
 }
 
 .accommodations-results article {
@@ -269,7 +273,6 @@ header nav ul li a:active {
   background: var(--booki-grey);
   border-radius: 15px;
   padding: 47px 40px;
-  margin-left: 40px;
 }
 
 /*************************
@@ -358,31 +361,25 @@ header nav ul li a:active {
 }
 
 .popular-card {
-  display: flex;
-  flex-direction: column;
-  justify-items: end;
   border-radius: 15px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
 .popular-link {
   display: flex;
+  column-gap: 20px;
   background-color: white;
   border-radius: 15px;
-  height: 144px;
 }
 
-.popular-link figure {
-  width: 40%;
-  border-radius: 15px 0 0 15px;
-  padding: 4px 0 4px 4px;
-}
 
 .popular-link figure img {
-  height: 100%;
-  width: 100%;
+  display: flex;
+  height: 139px;
+  width: 132px;
   object-fit: cover;
   border-radius: 15px 0 0 15px;
+  padding: 4px 0 4px 4px; 
 }
 
 .popular-link .description {
@@ -393,7 +390,6 @@ header nav ul li a:active {
 }
 
 .popular-link .container {
-  margin-left: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
