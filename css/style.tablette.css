@@ -21,174 +21,184 @@ style.tablette.css
 
 
 section {
-  margin: 20px 0;
+    margin: 20px 0;
+  }
+  /* -----------------------------------------------
+  --------------------------------------------------
+  --------------------------------------------------
+  ------------header settings-----------------------
+  --------------------------------------------------
+  --------------------------------------------------
+  ------------------------------------------------*/
+  
+  header {
+    display: block;
+    text-align: center;
+  }
+  
+  header .logo {
+    padding: 20px 0;
+  }
+  
+  /* header nav ul {
+    justify-content: space-evenly;
+  } */
+  
+  header ul li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  header nav ul a {
+    display: block;
+    width: 100%;
+    padding: 13.5px 50px;
+    border-top: none;
+    border-bottom: 3px solid white;
+  }
+  
+  header nav ul li a:hover,
+  header nav ul li a:active {
+    border-bottom: 3px solid var(--booki-blue);
+    border-top: none;
+  }
+  
+  /* -----------------------------------------------
+  --------------------------------------------------
+  --------------------------------------------------
+  --------🔍🔍🔍 Search bar settings 🔍🔍🔍-----------
+  --------------------------------------------------
+  --------------------------------------------------
+  ------------------------------------------------*/
+  
+  .section-search {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px
+  }
+  
+  .search-bar {
+    justify-content: center;
+  }
+  
+  /* -----------------------------------------------
+  --------------------------------------------------
+  --------------------------------------------------
+  ------------Filters container settings------------
+  --------------------------------------------------
+  --------------------------------------------------
+  ------------------------------------------------*/
+  
+  .container-filters {
+    display: block;
+  }
+  
+  .filters-area {
+    justify-content: space-between;
+    row-gap: 20px;
+  }
+
+  .filter-items{
+    margin-right: unset;
+  }
+
+
+  
+  /* -----------------------------------------------
+  --------------------------------------------------
+  --------------------------------------------------
+  ---------Accommodations Section settings----------
+  --------------------------------------------------
+  --------------------------------------------------
+  ------------------------------------------------*/
+  
+  .accommodations-results {
+    flex-direction: column-reverse;
+    column-gap: 0;
+  }
+  
+  .accommodations-results aside {
+    width: unset;
+    border-radius: unset;
+    padding: 47px 20px;
+  }
+  
+  .accommodations-results article {
+    width: unset;
+    background: white;
+    border-radius: unset;
+    padding: 20px;
+  }
+  
+  
+  /*************************
+  ---Accommodation Aside----
+  ---------Settings---------
+  **************************/
+  
+  
+  .popular-results {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .popular-link {
+    flex-direction: column;
+  }
+  
+  /* Voir si j'ai raison ou pas de set une width sur mes photos. Ne faudrait-il pas faire autrement? */
+  .popular-link figure img {
+    width: 200px;
+    border-radius: 15px 15px 0 0;
+    padding: 4px 4px 0 4px;
+  }
+  
+  .popular-link .container {
+    padding-left: 12px;
+  }
+  
+  /*************************
+  --Accommodation Article--
+  ---------Settings--------
+  ************************ */
+  
+  .footer-link {
+    margin-top: 25px;
+  }
+  
+  /* -----------------------------------------------
+  --------------------------------------------------
+  --------------------------------------------------
+  ---------Section activities settings----------
+  --------------------------------------------------
+  --------------------------------------------------
+  ------------------------------------------------*/
+  
+  .activities-results {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .two-pics-container,
+  .one-pics-container {
+    width: 45%;
+  }
+  
+  .activities-cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 43px;
+  }
+  
+  /* -----------------------------------------------
+  --------------------------------------------------
+  --------------------------------------------------
+  -----------------Footer settings------------------
+  --------------------------------------------------
+  --------------------------------------------------
+  ------------------------------------------------*/
+  
+footer{
+    padding: 47px 20px;
 }
-/* -----------------------------------------------
---------------------------------------------------
---------------------------------------------------
-------------header settings-----------------------
---------------------------------------------------
---------------------------------------------------
-------------------------------------------------*/
-
-header {
-  display: block;
-  text-align: center;
-}
-
-header .logo {
-  padding: 20px 0;
-}
-
-/* header nav ul {
-  justify-content: space-evenly;
-} */
-
-header ul li {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-header nav ul a {
-  display: block;
-  width: 100%;
-  padding: 13.5px 50px;
-  border-top: none;
-  border-bottom: 3px solid white;
-}
-
-header nav ul li a:hover,
-header nav ul li a:active {
-  border-bottom: 3px solid var(--booki-blue);
-  border-top: none;
-}
-
-/* -----------------------------------------------
---------------------------------------------------
---------------------------------------------------
---------🔍🔍🔍 Search bar settings 🔍🔍🔍-----------
---------------------------------------------------
---------------------------------------------------
-------------------------------------------------*/
-
-.section-search {
-  display: flex;
-  flex-direction: column;
-}
-
-.search-bar {
-  justify-content: center;
-}
-
-/* -----------------------------------------------
---------------------------------------------------
---------------------------------------------------
-------------Filters container settings------------
---------------------------------------------------
---------------------------------------------------
-------------------------------------------------*/
-
-.container-filters {
-  display: block;
-}
-
-.filters-area {
-  justify-content: space-evenly;
-  row-gap: 20px;
-}
-
-/* -----------------------------------------------
---------------------------------------------------
---------------------------------------------------
----------Accommodations Section settings----------
---------------------------------------------------
---------------------------------------------------
-------------------------------------------------*/
-
-.accommodations-results {
-  flex-direction: column-reverse;
-  column-gap: 0;
-}
-
-.accommodations-results aside {
-  width: unset;
-  border-radius: unset;
-}
-
-.accommodations-results article {
-  width: unset;
-  background: white;
-  border-radius: unset;
-  padding: 20px;
-}
-
-
-/*************************
----Accommodation Aside----
----------Settings---------
-**************************/
-
-
-.popular-results {
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.popular-link {
-  flex-direction: column;
-}
-
-/* Voir si j'ai raison ou pas de set une width sur mes photos. Ne faudrait-il pas faire autrement? */
-.popular-link figure img {
-  width: 200px;
-  border-radius: 15px 15px 0 0;
-  padding: 4px 4px 0 4px;
-}
-
-.popular-link .container {
-  padding-left: 12px;
-}
-
-/*************************
---Accommodation Article--
----------Settings--------
-************************ */
-
-.footer-link {
-  margin-top: 25px;
-}
-
-/* -----------------------------------------------
---------------------------------------------------
---------------------------------------------------
----------Section activities settings----------
---------------------------------------------------
---------------------------------------------------
-------------------------------------------------*/
-
-.activities-results {
-  display: flex;
-  flex-direction: column;
-}
-.two-pics-container,
-.one-pics-container {
-  width: 45%;
-}
-
-.activities-cards-container {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  row-gap: 43px;
-}
-
-/* -----------------------------------------------
---------------------------------------------------
---------------------------------------------------
------------------Footer settings------------------
---------------------------------------------------
---------------------------------------------------
-------------------------------------------------*/
-
-/* RAS */

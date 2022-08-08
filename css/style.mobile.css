@@ -46,135 +46,140 @@ style.mobile.css
 
 
 .search-bar button {
-  width: 50px;
-  border-radius: 15px;
-}
+    width: 50px;
+    border-radius: 15px;
+  }
+  
+  .texte-search {
+    display: none;
+  }
+  
+  .search-bar button i {
+    display: block;
+  }
+  
+  /* -----------------------------------------------
+  --------------------------------------------------
+  --------------------------------------------------
+  ------------Filters container settings------------
+  --------------------------------------------------
+  --------------------------------------------------
+  ------------------------------------------------*/
+  
+  .filters-area {
+    justify-content: flex-start;
+    row-gap: 12px;
+  }
 
-.texte-search {
-  display: none;
-}
-
-.search-bar button i {
-  display: block;
-}
-
-/* -----------------------------------------------
---------------------------------------------------
---------------------------------------------------
-------------Filters container settings------------
---------------------------------------------------
---------------------------------------------------
-------------------------------------------------*/
-
-.filters-area {
-  justify-content: flex-start;
-  row-gap: 12px;
-}
-
-
-/* -----------------------------------------------
---------------------------------------------------
---------------------------------------------------
----------Accommodations Section settings----------
---------------------------------------------------
---------------------------------------------------
-------------------------------------------------*/
-
-
-/*************************
----Accommodation Aside----
----------Settings---------
-**************************/
-
-
-.popular-results {
-  flex-direction: column;
-  justify-content: space-between;
-  row-gap: 15px;
-}
-
-.popular-link {
-  flex-direction: row;
-}
-
-.popular-link figure img {
-  display: flex;
-  height: 132px;
-  width: 139px;
-  border-radius: 15px 0 0 15px;
-  padding: 4px 0 4px 4px; 
-}
-
-
-/*************************
---Accommodation Article--
----------Settings--------
-************************ */
-
-.container-cards {
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.accommodations-card {
-  background-color: white;
-  border-radius: 15px;
-  width: 100%;
-}
-
-
-
-
-/* -----------------------------------------------
---------------------------------------------------
---------------------------------------------------
----------Section activities settings----------
---------------------------------------------------
---------------------------------------------------
-------------------------------------------------*/
-
-.activities-cards-container {
-  flex-direction: column;
-  row-gap: 20px;
-}
-
-.two-pics-container,
-.one-pics-container{
-  width: 100%;
-  row-gap: 20px;
-
-}
-
-.activity-card {
-  border-radius: 15px;
-  width: 100%;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-}
-
-.pics-1,
-.pics-2,
-.pics-3,
-.pics-4,
-.pics-5,
-.pics-6 {
-  height: 190px;
-}
-
-/* -----------------------------------------------
---------------------------------------------------
---------------------------------------------------
------------------Footer settings------------------
---------------------------------------------------
---------------------------------------------------
-------------------------------------------------*/
-
-.footer-content {
-  flex-direction: column;
-  row-gap: 25px;
-}
-
-.footer-items {
-  width: 100%;
-}
+  .filter-items {
+    margin-right: 15px;
+  }
+  
+  
+  /* -----------------------------------------------
+  --------------------------------------------------
+  --------------------------------------------------
+  ---------Accommodations Section settings----------
+  --------------------------------------------------
+  --------------------------------------------------
+  ------------------------------------------------*/
+  
+  
+  /*************************
+  ---Accommodation Aside----
+  ---------Settings---------
+  **************************/
+  
+  
+  .popular-results {
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 15px;
+  }
+  
+  .popular-link {
+    flex-direction: row;
+  }
+  
+  .popular-link figure img {
+    display: flex;
+    height: 132px;
+    width: 139px;
+    border-radius: 15px 0 0 15px;
+    padding: 4px 0 4px 4px; 
+  }
+  
+  
+  /*************************
+  --Accommodation Article--
+  ---------Settings--------
+  ************************ */
+  
+  .container-cards {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .accommodations-card {
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+  }
+  
+  
+  
+  
+  /* -----------------------------------------------
+  --------------------------------------------------
+  --------------------------------------------------
+  ---------Section activities settings----------
+  --------------------------------------------------
+  --------------------------------------------------
+  ------------------------------------------------*/
+  
+  .activities-cards-container {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  
+  .two-pics-container,
+  .one-pics-container{
+    width: 100%;
+    row-gap: 20px;
+  
+  }
+  
+  .activity-card {
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pics-1,
+  .pics-2,
+  .pics-3,
+  .pics-4,
+  .pics-5,
+  .pics-6 {
+    height: 190px;
+  }
+  
+  /* -----------------------------------------------
+  --------------------------------------------------
+  --------------------------------------------------
+  -----------------Footer settings------------------
+  --------------------------------------------------
+  --------------------------------------------------
+  ------------------------------------------------*/
+  
+  .footer-content {
+    flex-direction: column;
+    row-gap: 25px;
+  }
+  
+  .footer-items {
+    width: 100%;
+  }
+  
