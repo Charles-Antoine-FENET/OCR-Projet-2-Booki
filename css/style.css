@@ -38,7 +38,7 @@ style.css
   padding: 12px 0;
 }
 
-section{
+section {
   margin: 40px 0;
   padding: 0;
 }
@@ -57,18 +57,26 @@ i {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: bold;
   padding-bottom: 20px;
 }
-h1 {
-  font-size: 20px;
+
+h1,
+h2 {
+  font-size: 22px;
+}
+
+h3,
+figcaption {
+  font-weight: bold;
+  font-size: 16px;
 }
 h4 {
-  font-weight: bold;
-  font-size: small;
-  padding: 0 0 12px 0;
+  font-size: 18px;
 }
+
 
 a {
   color: black;
@@ -131,7 +139,7 @@ header nav ul li a:active {
 --------------------------------------------------
 --------------------------------------------------
 ------------------------------------------------*/
-.section-search{
+.section-search {
   margin-top: 0;
 }
 
@@ -197,7 +205,7 @@ header nav ul li a:active {
   /* height: 50px; */
 }
 
-.container-filters h3 {
+.container-filters h4 {
   margin-right: 32.59px;
   padding: 0;
 }
@@ -225,6 +233,19 @@ header nav ul li a:active {
   height: 46px;
   width: 45px;
   margin-right: 13.33px;
+  cursor: pointer;
+}
+
+.fa-flip-hover:hover::before {
+  animation: fa-flip 1.5s infinite linear;
+}
+
+.fa-bounce-hover:hover::before {
+  animation: fa-bounce 1s infinite linear;
+}
+
+.fa-beat-hover:hover::before {
+  animation: fa-beat 1.5s infinite linear;
 }
 
 .filter-items p {
@@ -307,8 +328,8 @@ header nav ul li a:active {
 }
 
 .accommodation-link figcaption {
-  font-size: small;
-  font-weight: bold;
+  /* font-size: small;
+  font-weight: bold; */
   margin: 7px 0 0 10px;
 }
 
@@ -372,20 +393,19 @@ header nav ul li a:active {
   border-radius: 15px;
 }
 
-
 .popular-link figure img {
   display: flex;
   height: 132px;
   width: 139px;
   object-fit: cover;
   border-radius: 15px 0 0 15px;
-  padding: 4px 0 4px 4px; 
+  padding: 4px 0 4px 4px;
 }
 
 .popular-link .description {
   display: flex;
   flex-direction: column;
-  width: 135px;
+  width: 140px;
   overflow: auto;
 }
 
@@ -420,9 +440,8 @@ header nav ul li a:active {
   justify-content: space-between;
 }
 
-
 .two-pics-container,
-.one-pics-container{
+.one-pics-container {
   display: flex;
   flex-direction: column;
   width: 22.58%;
@@ -442,7 +461,7 @@ header nav ul li a:active {
   border-radius: 15px;
 }
 
-.activity-card h4{
+.activity-card h3 {
   position: absolute;
   bottom: 0px;
   width: calc(100% - 44px);
