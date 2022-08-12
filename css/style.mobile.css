@@ -35,11 +35,11 @@ style.mobile.css
 --------------------------------------------------
 ------------------------------------------------*/
 
-
-
 .search-bar button {
   width: 50px;
   border-radius: 15px;
+  position: relative;
+  left: -10px;
 }
 
 .texte-search {
@@ -89,16 +89,12 @@ style.mobile.css
   row-gap: 15px;
 }
 
-.popular-link {
-  flex-direction: row;
+.popular-card{
+  width: 100%;
 }
 
-.popular-link figure img {
-  display: flex;
-  height: 132px;
-  width: 139px;
-  border-radius: 15px 0 0 15px;
-  padding: 4px 0 4px 4px; 
+.popular-link {
+  flex-direction: row;
 }
 
 
@@ -119,8 +115,6 @@ style.mobile.css
   border-radius: 15px;
   width: 100%;
 }
-
-
 
 
 /* -----------------------------------------------
@@ -168,9 +162,9 @@ style.mobile.css
 
 .footer-content {
   flex-direction: column;
-  row-gap: 25px;
 }
 
 .footer-items {
   width: 100%;
+  margin-bottom: 25px;
 }

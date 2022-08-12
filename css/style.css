@@ -33,13 +33,16 @@ style.css
   width: 100%;
   margin: 0 auto 0 auto;
 }
+* {
+  box-sizing: border-box;
+}
 
 .container {
-  padding: 12px 0;
+  margin: 16px 0;
 }
 
 section {
-  margin: 40px 0;
+  margin: 60px 0;
   padding: 0;
 }
 
@@ -57,8 +60,7 @@ i {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-weight: bold;
   padding-bottom: 20px;
 }
@@ -71,12 +73,13 @@ h2 {
 h3,
 figcaption {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
 }
 h4 {
   font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 15px;
 }
-
 
 a {
   color: black;
@@ -141,6 +144,7 @@ header nav ul li a:active {
 ------------------------------------------------*/
 .section-search {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .search-bar {
@@ -201,8 +205,6 @@ header nav ul li a:active {
 .container-filters {
   display: flex;
   align-items: center;
-  /* flex-wrap: wrap; */
-  /* height: 50px; */
 }
 
 .container-filters h4 {
@@ -236,6 +238,29 @@ header nav ul li a:active {
   cursor: pointer;
 }
 
+.filter-items p {
+  margin-right: 20px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.info i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--booki-grey);
+  border-radius: 50%;
+  font-size: 16px;
+  height: 22px;
+  width: 23px;
+  margin-right: 13.33px;
+}
+
+/* Animation des filtres  */
+
 .fa-flip-hover:hover::before {
   animation: fa-flip 1.5s infinite linear;
 }
@@ -245,30 +270,10 @@ header nav ul li a:active {
 }
 
 .fa-beat-hover:hover::before {
-  animation: fa-beat 1.5s infinite linear;
+  animation: fa-beat 1.2s infinite linear;
 }
 
-.filter-items p {
-  margin-right: 20px;
-}
-
-.info {
-  display: flex;
-  align-items: center;
-  /* margin: 10px 0 25px 0; */
-}
-
-.info i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--booki-grey);
-  border-radius: 50%;
-  font-size: smaller;
-  height: 22px;
-  width: 23px;
-  margin-right: 13.33px;
-}
+/* fin d'animation des filtres */
 
 /* -----------------------------------------------
 --------------------------------------------------
@@ -277,7 +282,30 @@ header nav ul li a:active {
 --------------------------------------------------
 --------------------------------------------------
 ------------------------------------------------*/
+
 .accommodations-results {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 38px;
+}
+
+.accommodations-results article {
+  width: 65%;
+  background: var(--booki-grey);
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.accommodations-results aside {
+  width: 33%;
+  background: var(--booki-grey);
+  border-radius: 15px;
+  padding: 30px;
+}
+
+/* Alternative way to set the Accommodation Section" */
+
+/* .accommodations-results {
   display: flex;
   column-gap: 40px;
 }
@@ -294,7 +322,7 @@ header nav ul li a:active {
   background: var(--booki-grey);
   border-radius: 15px;
   padding: 47px 40px;
-}
+} */
 
 /*************************
 --Accommodation Article--
@@ -328,15 +356,13 @@ header nav ul li a:active {
 }
 
 .accommodation-link figcaption {
-  /* font-size: small;
-  font-weight: bold; */
   margin: 7px 0 0 10px;
 }
 
 .accommodation-link p,
 .accommodation-link .rating {
   margin: 7px 10px;
-  font-size: small;
+  font-size: 14px;
 }
 
 .acco1-rating :nth-child(-n + 4),
@@ -388,35 +414,34 @@ header nav ul li a:active {
 
 .popular-link {
   display: flex;
-  column-gap: 20px;
   background-color: white;
   border-radius: 15px;
 }
 
-.popular-link figure img {
-  display: flex;
-  height: 132px;
-  width: 139px;
-  object-fit: cover;
-  border-radius: 15px 0 0 15px;
-  padding: 4px 0 4px 4px;
+.popular-results figure {
+  width: 132px;
 }
 
-.popular-link .description {
-  display: flex;
-  flex-direction: column;
-  width: 140px;
-  overflow: auto;
+.popular-link figure img {
+  display: block;
+  height: 139px;
+  width: inherit;
+  object-fit: cover;
+  border-radius: 15px 0 0 15px;
+  padding: 5px 0 5px 5px;
 }
 
 .popular-link .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 1;
+  padding: 12px 5px 12px 10px;
+  margin: 0;
 }
 .popular-link p,
 .popular-link .rating {
-  font-size: small;
+  font-size: 14px;
 }
 
 .popu1-rating :nth-child(1n) {
@@ -464,7 +489,7 @@ header nav ul li a:active {
 .activity-card h3 {
   position: absolute;
   bottom: 0px;
-  width: calc(100% - 44px);
+  width: 100%;
   padding: 22px;
   border-radius: 0 0 14px 14px;
   background-color: white;
@@ -502,8 +527,6 @@ header nav ul li a:active {
 footer {
   background: var(--booki-grey);
   padding: 47px 40px;
-  display: flex;
-  justify-content: space-evenly;
 }
 
 .footer-content {
@@ -516,7 +539,7 @@ footer {
 }
 
 .footer-content ul {
-  font-size: small;
+  font-size: 16px;
 }
 
 .footer-items {

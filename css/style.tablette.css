@@ -14,8 +14,9 @@ style.tablette.css
 --------------------------------------------------
 ------------------------------------------------*/
 
-/* RAS */
-
+.wrapper {
+  max-width: 100%;
+}
 
 section {
   margin: 20px 0;
@@ -37,10 +38,6 @@ header .logo {
   padding: 20px 0;
 }
 
-/* header nav ul {
-  justify-content: space-evenly;
-} */
-
 header ul li {
   width: 100%;
   display: flex;
@@ -52,7 +49,7 @@ header nav ul a {
   width: 100%;
   padding: 13.5px 50px;
   border-top: none;
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid var(--booki-grey);
 }
 
 header nav ul li a:hover,
@@ -72,7 +69,8 @@ header nav ul li a:active {
 .section-search {
   display: flex;
   flex-direction: column;
-  padding: 0 20px
+  padding: 0 20px;
+  margin-top: 35px;
 }
 
 .search-bar {
@@ -96,11 +94,9 @@ header nav ul li a:active {
   row-gap: 20px;
 }
 
-.filter-items{
+.filter-items {
   margin-right: unset;
 }
-
-
 
 /* -----------------------------------------------
 --------------------------------------------------
@@ -118,41 +114,49 @@ header nav ul li a:active {
 .accommodations-results aside {
   width: unset;
   border-radius: unset;
-  padding: 47px 20px;
+  padding: 40px 15px;
 }
 
 .accommodations-results article {
   width: unset;
   background: white;
   border-radius: unset;
-  padding: 20px;
+  padding: 40px 15px;
 }
-
 
 /*************************
 ---Accommodation Aside----
 ---------Settings---------
 **************************/
 
-
 .popular-results {
   flex-direction: row;
   justify-content: space-between;
 }
 
-.popular-link {
-  flex-direction: column;
+.popular-card {
+  width: 32%;
 }
 
-/* Voir si j'ai raison ou pas de set une width sur mes photos. Ne faudrait-il pas faire autrement? */
+.popular-results figure {
+  width: 110px;
+}
+
 .popular-link figure img {
-  width: 200px;
-  border-radius: 15px 15px 0 0;
-  padding: 4px 4px 0 4px;
+  height: 120px;
+}
+
+.popular-card h3 {
+  font-size: 14px;
+  padding-bottom: 13px;
 }
 
 .popular-link .container {
-  padding-left: 12px;
+  padding-left: 12px 5px;
+}
+
+.popular-link p {
+  font-size: 12px;
 }
 
 /*************************
@@ -161,7 +165,7 @@ header nav ul li a:active {
 ************************ */
 
 .footer-link {
-  margin-top: 25px;
+  margin-top: 34px;
 }
 
 /* -----------------------------------------------
@@ -175,7 +179,7 @@ header nav ul li a:active {
 .activities-results {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 .two-pics-container,
 .one-pics-container {
@@ -196,6 +200,10 @@ header nav ul li a:active {
 --------------------------------------------------
 ------------------------------------------------*/
 
-footer{
-  padding: 47px 20px;
+footer {
+  padding: 47px 15px;
+}
+
+.footer-content ul {
+  font-size: 14px;
 }
