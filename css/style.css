@@ -19,7 +19,9 @@ style.css
   --booki-blue: #0065fc;
   --booki-blue-light: #deebff;
   --booki-grey: #f2f2f2;
+  --booki-shadow: rgba(0, 0, 0, 0.2);
 }
+
 
 /* -----------------------------------------------
 --------------------------------------------------
@@ -31,19 +33,19 @@ style.css
 .wrapper {
   max-width: 1340px;
   width: 100%;
-  margin: 0 auto 0 auto;
+  margin: 0px auto;
 }
 * {
   box-sizing: border-box;
 }
 
 .container {
-  margin: 16px 0;
+  margin: 16px 0px;
 }
 
 section {
-  margin: 60px 0;
-  padding: 0;
+  margin: 60px 0px;
+  padding: 0px;
 }
 
 i {
@@ -106,12 +108,7 @@ header {
   padding-left: 15px;
 }
 
-.logo a {
-  display: block;
-}
-
 header .logo a img {
-  display: inline-block;
   height: 40px;
   width: auto;
 }
@@ -143,8 +140,8 @@ header nav ul li a:active {
 --------------------------------------------------
 ------------------------------------------------*/
 .section-search {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .search-bar {
@@ -175,7 +172,8 @@ header nav ul li a:active {
 
 .search-bar input::placeholder {
   color: black;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: bold;
   font-family: "Raleway", sans-serif;
 }
 
@@ -183,10 +181,11 @@ header nav ul li a:active {
   width: 132px;
   background: var(--booki-blue);
   border: none;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0px 15px 15px 0px;
   color: white;
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .search-bar button i {
@@ -209,7 +208,7 @@ header nav ul li a:active {
 
 .container-filters h4 {
   margin-right: 32.59px;
-  padding: 0;
+  padding: 0px;
 }
 
 .filters-area {
@@ -240,6 +239,7 @@ header nav ul li a:active {
 
 .filter-items p {
   margin-right: 20px;
+  font-weight: 600;
 }
 
 .info {
@@ -303,27 +303,6 @@ header nav ul li a:active {
   padding: 30px;
 }
 
-/* Alternative way to set the Accommodation Section" */
-
-/* .accommodations-results {
-  display: flex;
-  column-gap: 40px;
-}
-
-.accommodations-results article {
-  width: 70%;
-  background: var(--booki-grey);
-  border-radius: 15px;
-  padding: 47px 40px;
-}
-
-.accommodations-results aside {
-  width: 30%;
-  background: var(--booki-grey);
-  border-radius: 15px;
-  padding: 47px 40px;
-} */
-
 /*************************
 --Accommodation Article--
 ---------Settings--------
@@ -334,6 +313,7 @@ header nav ul li a:active {
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 30px;
+
 }
 
 .accommodations-card {
@@ -356,7 +336,7 @@ header nav ul li a:active {
 }
 
 .accommodation-link figcaption {
-  margin: 7px 0 0 10px;
+  margin: 7px 0px 0px 10px;
 }
 
 .accommodation-link p,
@@ -409,7 +389,7 @@ header nav ul li a:active {
 
 .popular-card {
   border-radius: 15px;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 15px var(--booki-shadow);
 }
 
 .popular-link {
@@ -427,7 +407,7 @@ header nav ul li a:active {
   height: 139px;
   width: inherit;
   object-fit: cover;
-  border-radius: 15px 0 0 15px;
+  border-radius: 15px 0px 0px 15px;
   padding: 5px 0 5px 5px;
 }
 
@@ -437,7 +417,7 @@ header nav ul li a:active {
   justify-content: space-between;
   flex: 1;
   padding: 12px 5px 12px 10px;
-  margin: 0;
+  margin: 0px;
 }
 .popular-link p,
 .popular-link .rating {

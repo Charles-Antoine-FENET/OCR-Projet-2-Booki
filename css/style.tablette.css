@@ -70,7 +70,7 @@ header nav ul li a:active {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
-  margin-top: 35px;
+  margin-top: 19px;
 }
 
 .search-bar {
@@ -92,10 +92,6 @@ header nav ul li a:active {
 .filters-area {
   justify-content: space-between;
   row-gap: 20px;
-}
-
-.filter-items {
-  margin-right: unset;
 }
 
 /* -----------------------------------------------
